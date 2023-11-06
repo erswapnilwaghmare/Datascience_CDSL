@@ -1,5 +1,4 @@
 # Entrepreneurial Success Predictor
-
 This script offers a fun way to predict someone's potential for success as an entrepreneur using arbitrary and whimsical criteria.
 
 ```python
