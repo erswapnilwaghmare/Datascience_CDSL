@@ -41,6 +41,15 @@ print(conf_matrix)
 sns.set()  # Use seaborn's default settings
 plt.figure(figsize=(8, 6))  # Specify figure size
 sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=["Predicted: Yes", "Predicted: No"], yticklabels=["Actual: Yes", "Actual: No"])
+#'''
+cm: Your confusion matrix data.
+annot=True: This will annotate each cell in the heatmap with the numeric value from the confusion matrix.
+fmt="d": This is the format for the annotations. In this case, it's set to display integers.
+cmap="Blues": The colormap used for the heatmap. In this case, it's set to "Blues," which is a blue color scheme.
+xticklabels: Labels for the x-axis ticks. In your case, it's set to ["Predicted: Yes", "Predicted: No"].
+yticklabels: Labels for the y-axis ticks. In your case, it's set to ["Actual: Yes", "Actual: No"].
+Remember to adjust the parameters based on your specific needs and the structure of your confusion matrix,,,
+
 plt.xlabel('Predicted Promotion')
 plt.ylabel('Actual Promotion')
 plt.title('Confusion Matrix for Employee Promotions')
